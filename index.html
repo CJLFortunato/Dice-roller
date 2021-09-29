@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <main>
+        <h1>Dice roller</h1>
+        <div>
+            <label for="type" title="The number of sides your dice has (ex: 4, 6, 20...)">Number of sides on the dice</label>
+            <input list="dice-types" id="type" value="" name="type">
+            <datalist id="dice-types">
+                <option value="4">
+                <option value="6" default>
+                <option value="8">
+                <option value="10">
+                <option value="12">
+                <option value="20">
+                <option value="100">
+            </datalist>
+
+            <label for="number" title="The number of dices you want to roll">Number of dice to roll</label>
+            <input type="number" name="number" value="" min="1" id="number">
+
+            <label for="mod" title="If you want to add a number to the result of the roll, eg. your +2 constitution modifier">Modifier</label>
+            <input type="number" name="mod" value="" id="mod">
+
+            <button id="button">Roll</button>
+        </div>
+
+        <p id="results" style="display: none;"></p>
+    </main>
+    <footer>
+        <p>Made by CJL Fortunato. <a href="">Github link</a></p>
+        
+    </footer>
+    <script src="script.js"></script>
+    <!-- <script src="test.js"></script> -->
+</body>
+
+</html>
